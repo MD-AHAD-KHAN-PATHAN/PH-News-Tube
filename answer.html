@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="lg:m-20 md:m-10 m-5">
+
+    <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" checked="checked" /> 
+        <div class="collapse-title text-xl font-medium">
+            Discuss the scope of var, let, and const ?
+        </div>
+        <div class="collapse-content"> 
+          <p>
+            Here's a concise discussion of the scope of var, let, and const.
+            <br>
+            <span class="font-bold">var:</span> Variables declared with var have function-level scope. They are accessible throughout the function in which they are defined or globally if declared outside functions. var variables are hoisted, meaning their declarations are moved to the top of their containing function or global scope during execution. This can lead to unexpected behavior if accessed before declaration. var allows redeclaration within the same scope, potentially causing conflicts. Due to these quirks and the introduction of let and const, it's generally recommended to avoid using var in modern JavaScript code for better scoping control and predictability.
+            <br>
+            <span class="font-bold">let:</span> let introduces block-level scope, limiting variable accessibility to the block in which they are declared, such as within functions, loops, or conditional statements. Unlike var, let variables are not accessible before their declaration within the block, reducing the chances of errors caused by using uninitialized variables. Additionally, let variables cannot be re-declared within the same block, promoting cleaner and more predictable code. let is the preferred choice for variable scoping in modern JavaScript when reassignment is required, as it offers better scoping control and reduces the risk of unintended behavior.
+            <br>
+            <span class="font-bold">const :</span> const also provides block-level scope like let, but with the added restriction that variables declared with const cannot be reassigned after their initial assignment. This makes const ideal for defining constants or values that should remain unchanged throughout their scope. However, it's important to note that while the variable itself cannot be reassigned, the value it holds can be mutable, especially for objects and arrays. const ensures that a variable's reference remains constant within a block, making it valuable for preventing unintended reassignment of critical values, although it may not guarantee immutability for complex data types.</p>
+        </div>
+    </div>
+    <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" /> 
+        <div class="collapse-title text-xl font-medium">
+            Tell us the use cases of null and undefined ?
+        </div>
+        <div class="collapse-content"> 
+          <p>Here are the use cases of null and undefined:
+            <br>
+            <span class="font-bold">Use Cases for undefined:</span>
+            <br>
+            undefined often represents the absence of a value or the lack of initialization for variables and function parameters.
+            <br>
+            It's useful for checking if variables have been defined or if object properties exist but have no meaningful value.
+            <br>
+            It indicates missing function arguments and uninitialized variables.
+            <br>
+            <span class="font-bold">Use Cases for null:</span>
+            <br>
+            null explicitly signifies that a variable, object property, or value has no meaningful content.
+            <br>
+            It's ideal for clearing object references or indicating intentional absence of a value.
+            null can serve as an initial placeholder for objects or values that will be assigned later, and it helps release memory when objects are no longer needed.</p>
+        </div>
+    </div>
+    <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" /> 
+        <div class="collapse-title text-xl font-medium">
+            What do you mean by REST API ?
+        </div>
+        <div class="collapse-content"> 
+          <p>A REST API (Representational State Transfer Application Programming Interface) is a set of rules and conventions for building and interacting with web services. It uses HTTP methods (GET, POST, PUT, DELETE) to perform CRUD (Create, Read, Update, Delete) operations on resources represented as URLs, making it a standard for web communication.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

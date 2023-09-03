@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH News Tube</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <header class="lg:mt-10 lg:mx-20 md:mx-14 md:mt-10 m-5">
+        <div class="navbar bg-base-100 mb-7">
+            <div class="navbar-start">
+              <img src="Design/Logo.png" alt="">
+            </div>
+            <div class="navbar-center ">
+              <a class="btn hover:bg-red-500 hover:text-white" onclick="sortCard()">Sort by view</a>
+            </div>
+            <div class="navbar-end">
+              <a class="btn bg-red-500 text-white hover:text-black" onclick="answer()">Blog</a>
+            </div>
+        </div>
+        <hr>
+    </header>
+    
+    <main class="lg:mx-20 lg:my-14 md:m-14 m-8">
+        
+        <section id="btnContainer" class="lg:w-2/4 md:w-2/4 w-3/4 mx-auto mb-10">
+            <div id="tabContainer" class="flex justify-center gap-2">
+                
+            </div>
+        </section>
+
+        <section id="emptyData">
+            
+        </section>
+        
+        <section id="cardContainer" class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5">
+
+        </section>
+    </main>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
